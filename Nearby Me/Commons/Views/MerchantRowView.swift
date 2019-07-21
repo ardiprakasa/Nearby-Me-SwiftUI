@@ -29,7 +29,14 @@ struct MerchantRowView: View {
 struct MerchantRowView_Previews: PreviewProvider {
     static var previews: some View {
         let merchants = MerchantsFactory().getMerchants()
-        return MerchantRowView(merchant: merchants[0])
+        
+        let content = Group {
+            MerchantRowView(merchant: merchants[0])
+            MerchantRowView(merchant: merchants[1])
+        }
+        .previewLayout(.fixed(width: 300, height: 70))
+        
+        return content
     }
 }
 #endif
