@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6128774522E4AACE005A229D /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6128774422E4AACE005A229D /* RoundedImage.swift */; };
 		61A1FC4822E488CF0013FDC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1FC4722E488CF0013FDC6 /* AppDelegate.swift */; };
 		61A1FC4A22E488CF0013FDC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1FC4922E488CF0013FDC6 /* SceneDelegate.swift */; };
 		61A1FC4C22E488CF0013FDC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1FC4B22E488CF0013FDC6 /* ContentView.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6128774422E4AACE005A229D /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedImage.swift; path = "../../../../../System/Volumes/Data/Users/hardianprakasa/Documents/Nearby Me/Nearby Me/RoundedImage.swift"; sourceTree = "<group>"; };
 		61A1FC4422E488CF0013FDC6 /* Nearby Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nearby Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A1FC4722E488CF0013FDC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61A1FC4922E488CF0013FDC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6128774622E4AB0F005A229D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				61A1FC4D22E488D40013FDC6 /* Assets.xcassets */,
+				61A1FC5222E488D40013FDC6 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		61A1FC3B22E488CF0013FDC6 = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +110,12 @@
 		61A1FC4622E488CF0013FDC6 /* Nearby Me */ = {
 			isa = PBXGroup;
 			children = (
+				61A1FC5522E488D40013FDC6 /* Info.plist */,
 				61A1FC4722E488CF0013FDC6 /* AppDelegate.swift */,
 				61A1FC4922E488CF0013FDC6 /* SceneDelegate.swift */,
 				61A1FC4B22E488CF0013FDC6 /* ContentView.swift */,
-				61A1FC4D22E488D40013FDC6 /* Assets.xcassets */,
-				61A1FC5222E488D40013FDC6 /* LaunchScreen.storyboard */,
-				61A1FC5522E488D40013FDC6 /* Info.plist */,
+				6128774422E4AACE005A229D /* RoundedImage.swift */,
+				6128774622E4AB0F005A229D /* Resources */,
 				61A1FC4F22E488D40013FDC6 /* Preview Content */,
 			);
 			path = "Nearby Me";
@@ -268,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61A1FC4822E488CF0013FDC6 /* AppDelegate.swift in Sources */,
+				6128774522E4AACE005A229D /* RoundedImage.swift in Sources */,
 				61A1FC4A22E488CF0013FDC6 /* SceneDelegate.swift in Sources */,
 				61A1FC4C22E488CF0013FDC6 /* ContentView.swift in Sources */,
 			);
