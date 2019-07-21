@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6128774522E4AACE005A229D /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6128774422E4AACE005A229D /* RoundedImage.swift */; };
-		6173F9D822E4BA0C002511CA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6173F9D722E4BA0C002511CA /* MapView.swift */; };
+		611F250B22E4C4F700DD60F0 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F250922E4C4C200DD60F0 /* RoundedImage.swift */; };
+		611F250C22E4C4FA00DD60F0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F250A22E4C4C200DD60F0 /* MapView.swift */; };
 		61A1FC4822E488CF0013FDC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1FC4722E488CF0013FDC6 /* AppDelegate.swift */; };
 		61A1FC4A22E488CF0013FDC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1FC4922E488CF0013FDC6 /* SceneDelegate.swift */; };
-		61A1FC4C22E488CF0013FDC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1FC4B22E488CF0013FDC6 /* ContentView.swift */; };
+		61A1FC4C22E488CF0013FDC6 /* MerchantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1FC4B22E488CF0013FDC6 /* MerchantDetailView.swift */; };
 		61A1FC4E22E488D40013FDC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61A1FC4D22E488D40013FDC6 /* Assets.xcassets */; };
 		61A1FC5122E488D40013FDC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61A1FC5022E488D40013FDC6 /* Preview Assets.xcassets */; };
 		61A1FC5422E488D40013FDC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A1FC5222E488D40013FDC6 /* LaunchScreen.storyboard */; };
@@ -37,12 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6128774422E4AACE005A229D /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedImage.swift; path = "../../../../../System/Volumes/Data/Users/hardianprakasa/Documents/Nearby Me/Nearby Me/RoundedImage.swift"; sourceTree = "<group>"; };
-		6173F9D722E4BA0C002511CA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapView.swift; path = "../../../../../System/Volumes/Data/Users/hardianprakasa/Documents/Nearby Me/Nearby Me/MapView.swift"; sourceTree = "<group>"; };
+		611F250922E4C4C200DD60F0 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		611F250A22E4C4C200DD60F0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		61A1FC4422E488CF0013FDC6 /* Nearby Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nearby Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A1FC4722E488CF0013FDC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61A1FC4922E488CF0013FDC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		61A1FC4B22E488CF0013FDC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		61A1FC4B22E488CF0013FDC6 /* MerchantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantDetailView.swift; sourceTree = "<group>"; };
 		61A1FC4D22E488D40013FDC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61A1FC5022E488D40013FDC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		61A1FC5322E488D40013FDC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +80,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		611F250822E4C4B600DD60F0 /* Merchant Detail */ = {
+			isa = PBXGroup;
+			children = (
+				61A1FC4B22E488CF0013FDC6 /* MerchantDetailView.swift */,
+			);
+			path = "Merchant Detail";
+			sourceTree = "<group>";
+		};
+		611F250D22E4C58300DD60F0 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				611F250E22E4C58F00DD60F0 /* Views */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		611F250E22E4C58F00DD60F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				611F250922E4C4C200DD60F0 /* RoundedImage.swift */,
+				611F250A22E4C4C200DD60F0 /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		611F250F22E4C5A500DD60F0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				611F250822E4C4B600DD60F0 /* Merchant Detail */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		6128774622E4AB0F005A229D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,9 +148,8 @@
 				61A1FC5522E488D40013FDC6 /* Info.plist */,
 				61A1FC4722E488CF0013FDC6 /* AppDelegate.swift */,
 				61A1FC4922E488CF0013FDC6 /* SceneDelegate.swift */,
-				61A1FC4B22E488CF0013FDC6 /* ContentView.swift */,
-				6128774422E4AACE005A229D /* RoundedImage.swift */,
-				6173F9D722E4BA0C002511CA /* MapView.swift */,
+				611F250F22E4C5A500DD60F0 /* Screens */,
+				611F250D22E4C58300DD60F0 /* Commons */,
 				6128774622E4AB0F005A229D /* Resources */,
 				61A1FC4F22E488D40013FDC6 /* Preview Content */,
 			);
@@ -282,10 +314,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				61A1FC4822E488CF0013FDC6 /* AppDelegate.swift in Sources */,
-				6128774522E4AACE005A229D /* RoundedImage.swift in Sources */,
-				6173F9D822E4BA0C002511CA /* MapView.swift in Sources */,
+				611F250B22E4C4F700DD60F0 /* RoundedImage.swift in Sources */,
+				611F250C22E4C4FA00DD60F0 /* MapView.swift in Sources */,
 				61A1FC4A22E488CF0013FDC6 /* SceneDelegate.swift in Sources */,
-				61A1FC4C22E488CF0013FDC6 /* ContentView.swift in Sources */,
+				61A1FC4C22E488CF0013FDC6 /* MerchantDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

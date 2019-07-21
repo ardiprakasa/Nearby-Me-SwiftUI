@@ -8,11 +8,19 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MerchantDetailView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Kopi Kenangan")
-                .font(.title)
+        VStack {
+            MapView()
+                .frame(height: 300)
+            
+            RoundedImage()
+                .offset(y: -130)
+                .padding(.bottom, -130)
+            
+            VStack(alignment: .leading) {
+                Text("Kopi Kenangan")
+                    .font(.title)
                 HStack {
                     Text("Capital Place")
                         .font(.subheadline)
@@ -20,15 +28,17 @@ struct ContentView: View {
                     Text("South Jakarta")
                         .font(.subheadline)
                 }
+            }
+            .padding()
+            Spacer()
         }
-        .padding()
     }
 }
 
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MerchantDetailView()
     }
 }
 #endif
