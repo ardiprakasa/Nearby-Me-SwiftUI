@@ -10,8 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Kopi Kenangan")
-            .font(.title)
+        VStack(alignment: .leading) {
+            Text("Kopi Kenangan")
+                .font(.title)
+                HStack {
+                    Text("Capital Place")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("South Jakarta")
+                        .font(.subheadline)
+                }
+        }
+        .padding()
     }
 }
 
