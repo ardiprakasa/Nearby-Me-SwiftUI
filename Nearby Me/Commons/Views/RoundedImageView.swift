@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct RoundedImage: View {
+struct RoundedImageView: View {
     var body: some View {
         Image("kopiKenangan")
             .resizable()
@@ -24,7 +24,7 @@ struct RoundedImage: View {
 #if DEBUG
 struct RoundedImage_Previews: PreviewProvider {
     static var previews: some View {
-        RoundedImage()
+        RoundedImageView()
     }
 }
 #endif

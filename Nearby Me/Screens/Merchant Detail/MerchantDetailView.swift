@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MerchantDetailView.swift
 //  Nearby Me
 //
 //  Created by Hardian Prakasa on 21/07/19.
@@ -14,7 +14,7 @@ struct MerchantDetailView: View {
             MapView()
                 .frame(height: 300)
             
-            RoundedImage()
+            RoundedImageView()
                 .offset(y: -130)
                 .padding(.bottom, -130)
             

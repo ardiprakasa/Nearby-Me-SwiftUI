@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		611F250B22E4C4F700DD60F0 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F250922E4C4C200DD60F0 /* RoundedImage.swift */; };
+		611F250B22E4C4F700DD60F0 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F250922E4C4C200DD60F0 /* RoundedImageView.swift */; };
 		611F250C22E4C4FA00DD60F0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F250A22E4C4C200DD60F0 /* MapView.swift */; };
+		611F251222E4C7F700DD60F0 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F251122E4C7F700DD60F0 /* Merchant.swift */; };
+		6138602522E5177F00895EEC /* MerchantsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6138602422E5177F00895EEC /* MerchantsFactory.swift */; };
 		61A1FC4822E488CF0013FDC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1FC4722E488CF0013FDC6 /* AppDelegate.swift */; };
 		61A1FC4A22E488CF0013FDC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1FC4922E488CF0013FDC6 /* SceneDelegate.swift */; };
 		61A1FC4C22E488CF0013FDC6 /* MerchantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1FC4B22E488CF0013FDC6 /* MerchantDetailView.swift */; };
@@ -37,8 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		611F250922E4C4C200DD60F0 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		611F250922E4C4C200DD60F0 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		611F250A22E4C4C200DD60F0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		611F251122E4C7F700DD60F0 /* Merchant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Merchant.swift; sourceTree = "<group>"; };
+		6138602422E5177F00895EEC /* MerchantsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MerchantsFactory.swift; path = "../../../../../../System/Volumes/Data/Users/hardianprakasa/Documents/Nearby Me/Nearby Me/Models/MerchantsFactory.swift"; sourceTree = "<group>"; };
 		61A1FC4422E488CF0013FDC6 /* Nearby Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nearby Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A1FC4722E488CF0013FDC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61A1FC4922E488CF0013FDC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,7 +103,7 @@
 		611F250E22E4C58F00DD60F0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				611F250922E4C4C200DD60F0 /* RoundedImage.swift */,
+				611F250922E4C4C200DD60F0 /* RoundedImageView.swift */,
 				611F250A22E4C4C200DD60F0 /* MapView.swift */,
 			);
 			path = Views;
@@ -108,9 +112,19 @@
 		611F250F22E4C5A500DD60F0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				6138602622E51C0200895EEC /* Merchant List */,
 				611F250822E4C4B600DD60F0 /* Merchant Detail */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		611F251022E4C7CB00DD60F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				611F251122E4C7F700DD60F0 /* Merchant.swift */,
+				6138602422E5177F00895EEC /* MerchantsFactory.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		6128774622E4AB0F005A229D /* Resources */ = {
@@ -120,6 +134,13 @@
 				61A1FC5222E488D40013FDC6 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		6138602622E51C0200895EEC /* Merchant List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Merchant List";
 			sourceTree = "<group>";
 		};
 		61A1FC3B22E488CF0013FDC6 = {
@@ -148,6 +169,7 @@
 				61A1FC5522E488D40013FDC6 /* Info.plist */,
 				61A1FC4722E488CF0013FDC6 /* AppDelegate.swift */,
 				61A1FC4922E488CF0013FDC6 /* SceneDelegate.swift */,
+				611F251022E4C7CB00DD60F0 /* Models */,
 				611F250F22E4C5A500DD60F0 /* Screens */,
 				611F250D22E4C58300DD60F0 /* Commons */,
 				6128774622E4AB0F005A229D /* Resources */,
@@ -314,10 +336,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				61A1FC4822E488CF0013FDC6 /* AppDelegate.swift in Sources */,
-				611F250B22E4C4F700DD60F0 /* RoundedImage.swift in Sources */,
+				611F250B22E4C4F700DD60F0 /* RoundedImageView.swift in Sources */,
+				6138602522E5177F00895EEC /* MerchantsFactory.swift in Sources */,
 				611F250C22E4C4FA00DD60F0 /* MapView.swift in Sources */,
 				61A1FC4A22E488CF0013FDC6 /* SceneDelegate.swift in Sources */,
 				61A1FC4C22E488CF0013FDC6 /* MerchantDetailView.swift in Sources */,
+				611F251222E4C7F700DD60F0 /* Merchant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
