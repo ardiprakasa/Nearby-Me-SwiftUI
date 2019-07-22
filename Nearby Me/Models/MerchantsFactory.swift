@@ -8,6 +8,9 @@
 
 import Foundation
 
+
+let merchants: [Merchant] = MerchantsFactory().getMerchants()
+
 struct MerchantsFactory {
     
     let merchant1 = Merchant(id: 1,
@@ -82,7 +85,7 @@ struct MerchantsFactory {
     
     let merchant11 = Merchant(id: 11,
                               name: "Cuppa Coffee Patra Jasa",
-                              imageName: "cuppaCoffe",
+                              imageName: "cuppaCoffee",
                               coordinates: Coordinates(latitude: -6.233485, longitude: 106.823406),
                               address: "Jl. Gatot Subroto Kav 32-34 #GF",
                               city: "South Jakarta")
