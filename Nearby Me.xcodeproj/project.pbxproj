@@ -13,6 +13,7 @@
 		6138602522E5177F00895EEC /* MerchantsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6138602422E5177F00895EEC /* MerchantsFactory.swift */; };
 		6138602822E5205800895EEC /* MerchantRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6138602722E5205800895EEC /* MerchantRowView.swift */; };
 		613CA56722E612CE0073AED2 /* MerchantList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613CA56622E612CE0073AED2 /* MerchantList.swift */; };
+		615B27D922E6814B009A77BD /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B27D822E6814B009A77BD /* UserData.swift */; };
 		61A1FC4822E488CF0013FDC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1FC4722E488CF0013FDC6 /* AppDelegate.swift */; };
 		61A1FC4A22E488CF0013FDC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1FC4922E488CF0013FDC6 /* SceneDelegate.swift */; };
 		61A1FC4C22E488CF0013FDC6 /* MerchantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1FC4B22E488CF0013FDC6 /* MerchantDetailView.swift */; };
@@ -47,6 +48,7 @@
 		6138602422E5177F00895EEC /* MerchantsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MerchantsFactory.swift; path = "../../../../../../System/Volumes/Data/Users/hardianprakasa/Documents/Nearby Me/Nearby Me/Models/MerchantsFactory.swift"; sourceTree = "<group>"; };
 		6138602722E5205800895EEC /* MerchantRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MerchantRowView.swift; path = "../../../../../../../System/Volumes/Data/Users/hardianprakasa/Documents/Nearby Me/Nearby Me/Commons/Views/MerchantRowView.swift"; sourceTree = "<group>"; };
 		613CA56622E612CE0073AED2 /* MerchantList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MerchantList.swift; path = "../../../../../../../System/Volumes/Data/Users/hardianprakasa/Documents/Nearby Me/Nearby Me/Screens/Merchant List/MerchantList.swift"; sourceTree = "<group>"; };
+		615B27D822E6814B009A77BD /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserData.swift; path = "../../../../../../System/Volumes/Data/Users/hardianprakasa/Documents/Nearby Me/Nearby Me/Models/UserData.swift"; sourceTree = "<group>"; };
 		61A1FC4422E488CF0013FDC6 /* Nearby Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nearby Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A1FC4722E488CF0013FDC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61A1FC4922E488CF0013FDC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				611F251122E4C7F700DD60F0 /* Merchant.swift */,
 				6138602422E5177F00895EEC /* MerchantsFactory.swift */,
+				615B27D822E6814B009A77BD /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				613CA56722E612CE0073AED2 /* MerchantList.swift in Sources */,
 				6138602822E5205800895EEC /* MerchantRowView.swift in Sources */,
 				61A1FC4C22E488CF0013FDC6 /* MerchantDetailView.swift in Sources */,
+				615B27D922E6814B009A77BD /* UserData.swift in Sources */,
 				611F251222E4C7F700DD60F0 /* Merchant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

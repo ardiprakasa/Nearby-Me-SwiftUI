@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 let merchants: [Merchant] = MerchantsFactory().getMerchants()
 
 struct MerchantsFactory {
