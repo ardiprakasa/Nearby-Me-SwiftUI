@@ -13,7 +13,7 @@ struct MerchantList: View {
     var body: some View {
         NavigationView {
             List(merchants) { merchant in
-                NavigationLink(destination: MerchantDetailView()) {
+                NavigationLink(destination: MerchantDetailView(merchant: merchant)) {
                     MerchantRowView(merchant: merchant)
                 }
             }

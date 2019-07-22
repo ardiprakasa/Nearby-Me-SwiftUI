@@ -9,23 +9,26 @@
 import SwiftUI
 
 struct MerchantDetailView: View {
+    
+    var merchant: Merchant
+    
     var body: some View {
         VStack {
-            MapView()
+            MapView(coordinate: merchant.locationCoordinate)
                 .frame(height: 300)
             
-            RoundedImageView()
+            RoundedImageView(image: Image(merchant.imageName))
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
-                Text("Kopi Kenangan")
+                Text(merchant.name)
                     .font(.title)
                 HStack {
-                    Text("Capital Place")
+                    Text(merchant.address)
                         .font(.subheadline)
                     Spacer()
-                    Text("South Jakarta")
+                    Text(merchant.city)
                         .font(.subheadline)
                 }
             }
@@ -38,7 +41,7 @@ struct MerchantDetailView: View {
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MerchantDetailView()
+        MerchantDetailView(merchant: merchants[0])
     }
 }
 #endif

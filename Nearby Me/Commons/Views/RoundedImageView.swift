@@ -9,8 +9,11 @@
 import SwiftUI
 
 struct RoundedImageView: View {
+    
+    var image: Image
+    
     var body: some View {
-        Image("kopiKenangan")
+        image
             .resizable()
             .frame(width: 300, height: 300, alignment: .center)
             .aspectRatio(contentMode: .fit)
@@ -24,7 +27,7 @@ struct RoundedImageView: View {
 #if DEBUG
 struct RoundedImage_Previews: PreviewProvider {
     static var previews: some View {
-        RoundedImageView()
+        RoundedImageView(image: Image("kopiKenangan"))
     }
 }
 #endif
