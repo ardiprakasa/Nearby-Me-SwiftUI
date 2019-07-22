@@ -17,6 +17,7 @@ struct Merchant: Identifiable {
     var coordinates: Coordinates
     var address: String
     var city: String
+    var isFavorite: Bool = false
 
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(

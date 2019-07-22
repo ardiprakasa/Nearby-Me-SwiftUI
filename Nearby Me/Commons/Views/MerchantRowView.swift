@@ -21,6 +21,12 @@ struct MerchantRowView: View {
             
             Text(merchant.name)
             Spacer()
+            
+            if merchant.isFavorite {
+                Image(systemName: "star.fill")
+                    .imageScale(.medium)
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
