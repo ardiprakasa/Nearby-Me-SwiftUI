@@ -11,8 +11,13 @@ import SwiftUI
 struct MerchantList: View {
     
     var body: some View {
-        List(merchants) { merchant in
-            MerchantRowView(merchant: merchant)
+        NavigationView {
+            List(merchants) { merchant in
+                NavigationLink(destination: MerchantDetailView()) {
+                    MerchantRowView(merchant: merchant)
+                }
+            }
+            .navigationBarTitle(Text("Nearby Me"))
         }
     }
 }
