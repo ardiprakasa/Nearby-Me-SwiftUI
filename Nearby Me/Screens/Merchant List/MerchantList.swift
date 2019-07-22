@@ -14,11 +14,18 @@ struct MerchantList: View {
     
     var body: some View {
         NavigationView {
-            List(merchants) { merchant in
+            
+            List() {
                 
-                if !self.showFavoritesOnly || merchant.isFavorite {
-                    NavigationLink(destination: MerchantDetailView(merchant: merchant)) {
-                        MerchantRowView(merchant: merchant)
+                Toggle(isOn: $showFavoritesOnly) {
+                                Text("Filter Favorites")
+                            }
+                
+                ForEach(merchants) { merchant in
+                    if !self.showFavoritesOnly || merchant.isFavorite {
+                        NavigationLink(destination: MerchantDetailView(merchant: merchant)) {
+                            MerchantRowView(merchant: merchant)
+                        }
                     }
                 }
             }
