@@ -10,11 +10,16 @@ import SwiftUI
 
 struct MerchantList: View {
     
+    @State var showFavoritesOnly = false
+    
     var body: some View {
         NavigationView {
             List(merchants) { merchant in
-                NavigationLink(destination: MerchantDetailView(merchant: merchant)) {
-                    MerchantRowView(merchant: merchant)
+                
+                if !self.showFavoritesOnly || merchant.isFavorite {
+                    NavigationLink(destination: MerchantDetailView(merchant: merchant)) {
+                        MerchantRowView(merchant: merchant)
+                    }
                 }
             }
             .navigationBarTitle(Text("Nearby Me"))
