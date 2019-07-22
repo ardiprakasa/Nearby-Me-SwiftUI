@@ -9,7 +9,7 @@
 import SwiftUI
 import CoreLocation
 
-struct Merchant {
+struct Merchant: Identifiable {
     
     var id: Int
     var name: String

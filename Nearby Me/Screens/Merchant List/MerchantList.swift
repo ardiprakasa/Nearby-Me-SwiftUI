@@ -11,9 +11,8 @@ import SwiftUI
 struct MerchantList: View {
     
     var body: some View {
-        List {
-            MerchantRowView(merchant: merchants[0])
-            MerchantRowView(merchant: merchants[1])
+        List(merchants) { merchant in
+            MerchantRowView(merchant: merchant)
         }
     }
 }
