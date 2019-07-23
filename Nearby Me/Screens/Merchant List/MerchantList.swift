@@ -10,19 +10,19 @@ import SwiftUI
 
 struct MerchantList: View {
     
-    @State var showFavoritesOnly = false
+    @EnvironmentObject var userData: UserData
     
     var body: some View {
         NavigationView {
             
             List() {
                 
-                Toggle(isOn: $showFavoritesOnly) {
-                                Text("Filter Favorites")
-                            }
+                Toggle(isOn: $userData.showFavoritesOnly) {
+                    Text("Filter Favorites")
+                }
                 
-                ForEach(merchants) { merchant in
-                    if !self.showFavoritesOnly || merchant.isFavorite {
+                ForEach(userData.merchantsData) { merchant in
+                    if !self.userData.showFavoritesOnly || merchant.isFavorite {
                         NavigationLink(destination: MerchantDetailView(merchant: merchant)) {
                             MerchantRowView(merchant: merchant)
                         }
@@ -38,6 +38,7 @@ struct MerchantList: View {
 struct MerchantList_Previews: PreviewProvider {
     static var previews: some View {
         MerchantList()
+            .environmentObject(UserData())
     }
 }
 #endif

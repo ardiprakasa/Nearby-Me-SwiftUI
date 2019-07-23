@@ -10,7 +10,13 @@ import SwiftUI
 
 struct MerchantDetailView: View {
     
+    @EnvironmentObject var userData: UserData
+    
     var merchant: Merchant
+    
+    var merchantIndex: Int {
+        userData.merchantsData.firstIndex(where: { $0.id == merchant.id})!
+    }
     
     var body: some View {
         VStack {
@@ -42,6 +48,7 @@ struct MerchantDetailView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MerchantDetailView(merchant: merchants[0])
+            .environmentObject(UserData())
     }
 }
 #endif

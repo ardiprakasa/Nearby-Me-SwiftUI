@@ -14,13 +14,13 @@ final class UserData: BindableObject {
     let willChange = PassthroughSubject<Void, Never>()
     
     var showFavoritesOnly = false {
-        didSet {
+        willSet {
             willChange.send()
         }
     }
     
     var merchantsData = merchants {
-        didSet {
+        willSet {
             willChange.send()
         }
     }
