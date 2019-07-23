@@ -17,8 +17,7 @@ struct MerchantsFactory {
                              imageName: "kopiTiam",
                              coordinates: Coordinates(latitude: -6.232032, longitude: 106.82006),
                              address: "Jl. Jenderal Gatot Subroto No.Kav 18",
-                             city: "South Jakarta",
-                             isFavorite: true)
+                             city: "South Jakarta")
     
     let merchant2 = Merchant(id: 2,
                              name: "Fore Coffee Capital Place",

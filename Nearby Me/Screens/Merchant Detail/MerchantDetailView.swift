@@ -28,8 +28,24 @@ struct MerchantDetailView: View {
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
-                Text(merchant.name)
-                    .font(.title)
+                HStack {
+                    Text(merchant.name)
+                        .font(.title)
+                    
+                    Button(action: {
+                        self.userData.merchantsData[self.merchantIndex].isFavorite.toggle()
+                    }) {
+                        if self.userData.merchantsData[self.merchantIndex].isFavorite {
+                            Image(systemName: "star.fill")
+                                .foregroundColor(Color.yellow)
+                        } else {
+                            Image(systemName: "star.fill")
+                                .foregroundColor(Color.gray)
+                        }
+                    }
+                }
+                
+                
                 HStack {
                     Text(merchant.address)
                         .font(.subheadline)
